@@ -2102,6 +2102,93 @@ html, body{
     }
 }
 
+// Account Header
+.c-accheader{
+    position: relative;
+    width: 96%;
+    height: 7vw;
+    margin: 2em 2%;
+    $accheader-shadow: rgba(63, 63, 63, 0.425);
+    img{
+        padding: 1em;
+        width: 4em;
+        height: 4em;
+    }
+    a{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.2em;
+        color: white !important;
+    }
+    &__main{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $theme-red;
+        border-radius: 2em;
+        box-shadow: 0 0 10px $accheader-shadow;
+        display: flex;
+        align-items: center;
+    }
+    &__pass{
+        position: absolute;
+        width: 75%;
+        border-radius: 2em;
+        top: 0;
+        left: 25%;
+        background-color: $theme-red;
+        filter: brightness(120%);
+        box-shadow: 0 0 10px $accheader-shadow;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+    &__cart{
+        position: absolute;
+        width: 50%;
+        border-radius: 2em;
+        top: 0;
+        left: 50%;
+        background-color: $theme-red;
+        filter: brightness(140%);
+        box-shadow: 0 0 10px $accheader-shadow;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+    &__queue{
+        position: absolute;
+        top: 0;
+        width: 25%;
+        right: 0;
+        border-radius: 2em;
+        background-color: $theme-red;
+        filter: brightness(160%);
+        box-shadow: 0 0 10px $accheader-shadow;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Footer
 footer{
