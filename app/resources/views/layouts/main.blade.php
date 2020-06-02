@@ -7,8 +7,8 @@
     <!-- CSS -->
 	<link rel="stylesheet" href="/css/app.css">
 	<link rel="stylesheet" href="/css/yolo.css">
-	<link rel="stylesheet" href="/header.css">
-	<link rel="stylesheet" href="/countdown.css">
+	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/countdown.css">
 
 	<!-- Slider -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
@@ -42,7 +42,7 @@
 </head>
 <body>
 
-	<header>
+	<header class="other-header">
 			<div class="c-header u-flex_between a-relative">
 					<!-- PC Header -->
 					<div class="c-header__left u-flex_between">
@@ -319,6 +319,14 @@
 <!-- Script -->
 <script src="/js/script.js"></script>
 <script src="/js/swiper.min.js"></script>
+
+<!-- Header sticky -->
+<script type="text/javascript">
+			  window.addEventListener("scroll", function(){
+				  var header = document.querySelector("header");
+				  header.classList.toggle("sticky", window.scrollY > 0);
+			  })
+        </script>
 
 <!-- Initialize Swiper -->
 <script>

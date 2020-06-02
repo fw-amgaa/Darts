@@ -2419,6 +2419,7 @@ footer{
       }
       .icon-with-hover{
         position: relative;
+        box-shadow: 0 0 7px $white-shade;
       }
       .icon-with-hover:hover .bag-hover-container{
         opacity: 1;
@@ -2432,7 +2433,7 @@ footer{
 
       .icon-with-hover1{
         position: relative;
-
+        box-shadow: 0 0 7px $white-shade;
 
       }
       .icon-with-hover1:hover .bag-hover-container1{

@@ -1,4 +1,4 @@
-header{
+.home-header{
     position: fixed;
     top: 0;
     left: 0;
@@ -7,10 +7,9 @@ header{
     justify-content: space-between;
     align-items:center ;
     transition: 0.6s;
-    padding: 40px 100px;
     z-index: 100000;
   }
-  header .logo{
+  .home-header .logo{
     position: relative;
     font-weight: 700;
     color:#fff;
@@ -21,24 +20,22 @@ header{
     transition: 0.6s;
   }
   
-  header ul{
+  .home-header ul{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  header ul li{
+  .home-header ul li{
     position: relative;
     list-style: none;
   }
   
-  header ul li a{
+  .home-header ul li a{
     position: relative;
-    margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
   }
@@ -50,11 +47,41 @@ header{
     background-size: cover;
   }
   
-  header.sticky{
-    padding: 5px 100px;
-    background: #fff;
+  .home-header.sticky{
+    padding: 50px 0;
+    background: rgb(36, 36, 36, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
   }
-  header.sticky .logo,  
-  header.sticky ul li a{
-    color: #000;
-  } 
+
+  .other-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    transition: 0.6s;
+    z-index: 100000;
+  }
+
+  .other-header.sticky{
+    background: rgba(255, 255, 255);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    z-index: 100000;
+  }
+  .other-header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+  }

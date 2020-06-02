@@ -13937,6 +13937,7 @@ footer {
 
 .icon-with-hover {
   position: relative;
+  box-shadow: 0 0 7px #f7f7f7;
 }
 
 .icon-with-hover:hover .bag-hover-container {
@@ -13954,6 +13955,7 @@ footer {
 
 .icon-with-hover1 {
   position: relative;
+  box-shadow: 0 0 7px #f7f7f7;
 }
 
 .icon-with-hover1:hover .bag-hover-container1 {
@@ -15006,6 +15008,7 @@ footer {
 .a-article {
   height: calc(100vh - 100px);
   margin: 0;
+  margin-top: 100px;
 }
 
 .black {
