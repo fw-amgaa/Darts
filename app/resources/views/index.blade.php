@@ -56,7 +56,7 @@
     </div>
 
     <!-- Wrapper -->
-    <div class="c-rapper">
+    <div class="c-rapper" style="background-image: ">
             <div class="c-rapper__info">
                 <h2>Ирж буй тэмцээн</h2>
                 <h3>Ирэх сарын 15-наас 17-ны хооронд тэмцээн болно.</h3>
@@ -85,7 +85,7 @@
     <!-- Blog Content -->
     <div class="c-content">
         <div>
-            <h2 class="mb-2">
+            <h2 class="mb-5">
                 Онцлох
                 <span class="u-semititle">
                     Нийтлэл

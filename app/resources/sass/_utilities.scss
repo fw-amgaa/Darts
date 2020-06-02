@@ -83,7 +83,7 @@
         .u-search{
             position: relative;
             background: rgba(89, 88, 88, 0.36);
-            width: 210px;
+            width: 230px;
             height: 35px;
             border-radius: 22px;
             img{
@@ -100,6 +100,8 @@
                 background: transparent;
                 color: white;
                 overflow: hidden;
+                font-size: 0.9em;
+                margin-left: -8px;
             }
         }
         

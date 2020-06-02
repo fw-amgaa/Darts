@@ -1,0 +1,14 @@
+.sale-countdown{
+    top: 61% !important;
+    width: 82% !important;
+    height: 25% !important;
+}
+.sale-information{
+    position: absolute;
+    bottom: 17%;
+    z-index: 10;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    left: 32%;
+} 

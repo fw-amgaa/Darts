@@ -7,6 +7,8 @@
     <!-- CSS -->
 	<link rel="stylesheet" href="/css/app.css">
 	<link rel="stylesheet" href="/css/yolo.css">
+	<link rel="stylesheet" href="/header.css">
+	<link rel="stylesheet" href="/countdown.css">
 
 	<!-- Slider -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
@@ -28,6 +30,12 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+			  window.addEventListener("scroll", function(){
+				  var header = document.querySelector("header");
+				  header.classList.toggle("sticky", window.scrollY > 0);
+			  })
+			</script>
 		
 	@yield('link')
     <title>Darts</title>
@@ -111,8 +119,104 @@
 									<img src="/img/search-white.png" alt="Search Icon">
 									<input class="black" type="text" placeholder="Хайх зүйлээ оруулна уу...">
 							</form>
-							<img src="/img/shopping-bag-53.png" alt="">
-							<img src="/img/account2.png" alt="">
+							<div class="icon-with-hover">
+								<img src="/img/shopping-bag-53.png" alt="">
+								<div class="bag-hover-container">
+									<h3>Таны сагсанд байгаа бараанууд</h3>
+
+									<div class="inner-bag-hover">
+										<h4>Хэрэглэгчийн нэр</h4>
+									<nav class="able-to-scroll">	
+										<ul>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+										</ul>
+									</nav>	
+										<div class="inner-bag-hover-tprice">Нийт дүн:300'000</div>
+										<div class="purchase-section">
+											<div class="u-button">Сагс руу очих</div>
+											<div class="u-button_red">Сагс хоослох</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="icon-with-hover1">
+								<img src="/img/account2.png" alt="">
+								<div class="bag-hover-container1">
+									<h3>Нэвтрэх</h3>
+									<div class="inner-bag-hover1">
+										<form action="/action_page.php" method="post">
+
+											<div class="login-container">
+
+												<input type="text" placeholder="Хэрэглэгчийн нэр" name="uname" required>
+												<input type="password" placeholder="Нууц үг" name="psw" required>
+												<div class="in-one-row"> 
+													<label><input type="checkbox" checked="checked" name="remember"> Намайг сана</label>
+													<span class="psw"><a href="#">Нууц үг мартсан</a></span>
+												</div>
+											<button class="u-button_red-login" type="submit">Нэвтрэх</button>									
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
 					</div>
 			</div>
 	</header>
@@ -121,6 +225,23 @@
 @yield('content')
 
 <footer>
+	<div class="sticky-filter-mphone">Filter</div>
+	<div class="sticky-filter-hover u-none">
+		<h3>Он /Сар/ Өдөр</h3>	
+		<nav class="sticky-filter-nav">
+			<ul class="sticky-filter-list">
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+				<li>2020.3.10</li>
+			</ul>
+		</nav>
+	</div>
     <div class="c-footer u-container">
 	<div class="c-footer__content u-flex_wrap">
 	    <div class="c-footer__content--quarter">
@@ -265,6 +386,12 @@
 				});
 		});
 </script>
+<script type="text/javascript">
+			  window.addEventListener("scroll", function(){
+				  var header = document.querySelector("header");
+				  header.classList.toggle("sticky", window.scrollY > 0);
+			  })
+			</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
