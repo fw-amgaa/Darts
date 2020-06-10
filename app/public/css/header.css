@@ -53,6 +53,11 @@
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);  
   }
+  @media screen and (max-width: 992px){
+    .home-header.sticky{
+      padding: 35px 0;
+    }
+  }
 
   .other-header{
     position: fixed;

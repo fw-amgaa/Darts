@@ -11280,6 +11280,22 @@ body {
   }
 }
 
+main {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  padding-bottom: 451px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
 .swiper-slide .slider-info {
   height: 100%;
   color: white;
@@ -11360,11 +11376,14 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
+  background: #fff;
+  z-index: 1;
+  padding-top: 64px;
+  padding-bottom: 25px;
 }
 
 .c-content h2 {
   position: relative;
-  margin-top: 64px;
   font-size: 60px;
   font-weight: 300;
 }
@@ -11871,7 +11890,8 @@ body {
   height: 40vw;
   color: white;
   position: relative;
-  margin-top: 25px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .c-rapper__info {
@@ -12004,6 +12024,7 @@ body {
 
 .c-rapper2 {
   display: flex;
+  z-index: 1;
   width: 100%;
   background-image: url(/images/Untitled-4.png?e1e06520095b0609393fda6d0724af52);
   background-repeat: no-repeat;
@@ -12012,7 +12033,6 @@ body {
   height: 36vw;
   color: white;
   position: relative;
-  margin-bottom: 10vw;
   box-shadow: 0 2px 5px rgba(128, 128, 128, 0.486);
 }
 
@@ -12677,7 +12697,7 @@ body {
 }
 
 .c-single__tabs .transformer-tabs a:hover {
-  color: #f95d54;
+  color: #f95d54 !important;
   cursor: pointer;
 }
 
@@ -12686,6 +12706,7 @@ body {
   position: relative;
   bottom: -3px;
   display: inline-block !important;
+  height: 67px;
 }
 
 @media (max-width: 700px) {
@@ -13208,7 +13229,7 @@ body {
 }
 
 .c-about {
-  margin: 6em 0;
+  padding: 6em 0;
 }
 
 .c-about .c-about__left {
@@ -13604,6 +13625,7 @@ body {
   width: 96%;
   height: 7vw;
   margin: 2em 2%;
+  top: 30px;
 }
 
 .c-accheader img {
@@ -13682,6 +13704,15 @@ body {
 
 footer {
   background: #272727;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .c-footer__content {
@@ -13937,7 +13968,6 @@ footer {
 
 .icon-with-hover {
   position: relative;
-  box-shadow: 0 0 7px #f7f7f7;
 }
 
 .icon-with-hover:hover .bag-hover-container {
@@ -13955,7 +13985,6 @@ footer {
 
 .icon-with-hover1 {
   position: relative;
-  box-shadow: 0 0 7px #f7f7f7;
 }
 
 .icon-with-hover1:hover .bag-hover-container1 {
@@ -14221,6 +14250,7 @@ footer {
   overflow: hidden;
   overflow-y: scroll;
   margin-bottom: 0 !important;
+  flex-direction: column;
 }
 
 /*<<<<<<<<<<<<<<<<uuganaa css end>>>>>>>>>>>>>>>>>>*/
@@ -14788,7 +14818,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: 79%;
   border-radius: 24px;
   overflow: hidden;
   background-color: #707070;
@@ -14979,6 +15009,72 @@ footer {
   display: block !important;
 }
 
+.home-dropdown {
+  position: relative;
+}
+
+.home-dropdown__tab {
+  width: 500px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  box-shadow: 0 0 3px #d4d4d4;
+  z-index: 10;
+  background: #fff;
+  transition: ease 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.home-dropdown__tab ol {
+  padding: 5%;
+}
+
+.home-dropdown__tab ol li {
+  margin-bottom: 1em;
+}
+
+.home-dropdown__tab ol li a {
+  color: black !important;
+  font-weight: 400;
+}
+
+.home-dropdown__tab ol li a::after {
+  display: none;
+}
+
+.home-dropdown__tab ol li:last-child {
+  margin-bottom: 0;
+}
+
+.home-dropdown:hover .home-dropdown__tab {
+  transition: ease 0.3s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.font-control .sale-information {
+  font-size: 0.8vw;
+}
+
+@media screen and (max-width: 992px) {
+  .font-control .sale-information {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .font-control .sale-information {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .font-control .sale-information {
+    font-size: 2.4vw;
+  }
+}
+
 .a-slow::after {
   transition: width 0.4s !important;
 }
@@ -15005,9 +15101,16 @@ footer {
   right: 0;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .a-article {
   height: calc(100vh - 100px);
   margin: 0;
+}
+
+.a-article:first-child {
   margin-top: 100px;
 }
 
@@ -15031,9 +15134,18 @@ footer {
   margin-bottom: 36px;
 }
 
+.pt-0 {
+  padding-top: 0;
+}
+
 .a-redspacing {
   width: 100%;
   height: 200px;
   background: #f95d54;
+  margin-top: 100px;
+}
+
+.answer {
+  margin-bottom: 0 !important;
 }
 

@@ -258,8 +258,8 @@
     <div class="c-content">
         <div class="c-content__brand">
             <div class="c-content__brand--image">
-                <img src="/img/brand3.png" alt="">
-                <img class="alt-image" src="/img/brand2.png" alt="">
+                <img src="/img/Winmau Logo B.jpg" alt="">
+                <img class="alt-image" src="/img/Winmau Logo B.jpg">
             </div>
             <div class="c-content__brand--image">
                 <img src="/img/brand1.png" alt="">

@@ -180,6 +180,20 @@ html, body{
         }
     }
 }
+
+main{
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+body{
+    padding-bottom: 451px;
+    @media screen and (max-width: 1024px){
+        padding-bottom: 0;
+    }
+}
+
 // Swiper
 .swiper-slide{
     .slider-info{
@@ -249,9 +263,12 @@ html, body{
     position: relative;
     width: 100%;
     text-align: center; 
+    background: #fff;
+    z-index: 1;
+    padding-top: 64px;
+    padding-bottom: 25px;
     h2{
         position: relative;
-        margin-top: 64px;
         font-size: 60px;
         font-weight: 300;
     }
@@ -698,7 +715,8 @@ html, body{
     height: 40vw;
     color: white;
     position: relative;
-    margin-top: 25px;
+    background-color: #fff;
+    z-index: 1;
     &__info{
         width: 86%;
         margin: auto;
@@ -809,6 +827,7 @@ html, body{
 
 .c-rapper2{
     display: flex;
+    z-index: 1;
     width: 100%;
     background-image: url(img/Untitled-4.png);
     background-repeat: no-repeat;
@@ -817,7 +836,6 @@ html, body{
     height: 36vw;
     color: white;
     position: relative;
-    margin-bottom: 10vw;
     box-shadow: 0 2px 5px rgba(128, 128, 128, 0.486);
     &__info{
         width: 86%;
@@ -1357,7 +1375,7 @@ html, body{
               text-decoration: none;
               padding: 0.5rem;
               &:hover{
-                  color: $theme-red;
+                  color: $theme-red !important;
                   cursor: pointer;
               }
               &.active {
@@ -1365,6 +1383,7 @@ html, body{
                 position: relative;
                 bottom: -3px;
                 display: inline-block !important;
+                height: 67px;
               }
             }
             @media (max-width: 700px) {
@@ -1782,7 +1801,7 @@ html, body{
 
 // About us
 .c-about{
-    margin: 6em 0;
+    padding: 6em 0;
     .c-about__left{
         width: 70%;
         h2{
@@ -2107,6 +2126,7 @@ html, body{
     width: 96%;
     height: 7vw;
     margin: 2em 2%;
+    top: 30px;
     $accheader-shadow: rgba(63, 63, 63, 0.425);
     img{
         padding: 1em;
@@ -2192,6 +2212,12 @@ html, body{
 // Footer
 footer{
     background: $footer-bg;
+    @media screen and (min-width: 1024px){
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }
 .c-footer{
     &__content{
@@ -2419,7 +2445,6 @@ footer{
       }
       .icon-with-hover{
         position: relative;
-        box-shadow: 0 0 7px $white-shade;
       }
       .icon-with-hover:hover .bag-hover-container{
         opacity: 1;
@@ -2433,7 +2458,6 @@ footer{
 
       .icon-with-hover1{
         position: relative;
-        box-shadow: 0 0 7px $white-shade;
 
       }
       .icon-with-hover1:hover .bag-hover-container1{
@@ -2657,6 +2681,7 @@ footer{
           overflow:hidden;
           overflow-y:scroll;
           margin-bottom: 0 !important;
+          flex-direction: column;
         }
   
         }

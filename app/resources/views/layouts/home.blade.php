@@ -38,8 +38,27 @@
             <div class="c-header__left u-flex_between">
                 <img src="img/dats.png" alt="Company Logo">
                 <ul class="c-header__left--menu u-flex_between">
-                    <li class="u-hover_main">
-                        <a>Нүүр</a>
+                    <li class="u-hover_main home-dropdown">
+						<a>Нүүр</a>
+						<div class="home-dropdown__tab">
+							<ol>
+								<li>
+									<a href="">
+										Naachin chi hugshuun
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Bawaltsah bandi bnu
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Chinii durtai awga ah
+									</a>
+								</li>
+							</ol>
+						</div>
                     </li>
                     <li class="u-hover_main a-slow"><a>Бүтээгдэхүүн</a></li>
                     <li class="u-hover_main"><a>Блог</a></li>
@@ -215,7 +234,20 @@
 
 
 
-@yield('content')
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>@yield('content')</main>
 
 <footer>
     <div class="c-footer u-container">
